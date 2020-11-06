@@ -9,7 +9,7 @@ JPN = "0005000010106100"
 
 os.mkdir("C:\Lord-G\SM3DWR")
 os.chdir("C:\Lord-G\SM3DWR")
-os.system('cmd /c curl https://lord-giganticus.github.io/Super-Mario-3d-World-Repainted-Downloader/docs/SM3DWR.zip -o SM3DWR.zip')
+input("Due to the mod's size, you'll have to dl the zip and save it C:\Lord-G\SM3DWR.")
 os.system('cmd /c curl http://stahlworks.com/dev/unzip.exe -o unzip.exe')
 os.system('cmd /c unzip *zip')
 os.system('cmd /c del /f *.zip')
