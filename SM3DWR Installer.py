@@ -1,3 +1,5 @@
+# Made with hard work by Lord-Giganticus. PLEASE do not copy and paste this without crediting me :)
+
 import win32api
 import os
 import shutil
