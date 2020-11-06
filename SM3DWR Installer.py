@@ -8,9 +8,10 @@ drives = win32api.GetLogicalDriveStrings()
 
 os.mkdir("C:\Lord-G")
 os.chdir("C:\Lord-G")
-input("Due to the mod's size, you'll have to dl the latest (and I mean it, the old ones don't work with this.) zip and save it C:\Lord-G\ as SM3DWR.zip.")
-os.system('cmd /c start https://gamebanana.com/gamefiles/download/12437')
-input("Once that's done press enter to continue,")
+print("Due to the mod's size, you'll have to dl the latest (and I mean it, the old ones don't work with this.) zip and save it to C:\Lord-G\ as SM3DWR.zip.")
+dl = input("Do you wish to make the script go to the page? If so enter 1. If not just press enter (I hope you have it downloaded if that's true.)")
+if dl == "1":
+    os.system('cmd /c start https://gamebanana.com/gamefiles/download/12437')
 os.system('cmd /c curl http://stahlworks.com/dev/unzip.exe -o unzip.exe')
 os.system('cmd /c unzip *zip')
 os.system('cmd /c del /f *.zip')
@@ -85,7 +86,6 @@ elif choice == "2":
     USA = "10145c00"
     EUR = "10145d00"
     JPN = "10106100"
-
     mlc01_location = input("Enter the path to your cemu's mlc01 folder:\n")
     os.chdir(mlc01_location)
     os.chdir("usr")
