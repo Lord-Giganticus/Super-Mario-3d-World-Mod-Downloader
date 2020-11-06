@@ -5,5 +5,5 @@ Due to the version zips being far to large for Github hosting, the program will 
 # Contributing
 Refer to [CONTRIBUTING.md](https://github.com/Lord-Giganticus/Super-Mario-3d-World-Repainted-Downloader/blob/main/CONTRIBUTING.md)
 # Issues
-To report a bug, refer to [bug_report.md](https://github.com/Lord-Giganticus/Super-Mario-3d-World-Repainted-Downloader/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
+To report a bug, refer to [bug_report.md](https://github.com/Lord-Giganticus/Super-Mario-3d-World-Repainted-Downloader/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)\n
 To request a new feature, refer to [feature_request.md](https://github.com/Lord-Giganticus/Super-Mario-3d-World-Repainted-Downloader/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
