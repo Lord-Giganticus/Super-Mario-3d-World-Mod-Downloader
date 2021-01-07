@@ -6,7 +6,8 @@ import shutil
 
 drives = win32api.GetLogicalDriveStrings()
 
-os.mkdir("C:\Lord-G")
+if os.path.isdir("C:\Lord-G") == False:
+    os.mkdir("C:\Lord-G")
 os.chdir("C:\Lord-G")
 print("Due to the mod's size, you'll have to dl the latest (and I mean it, the old ones don't work with this.) zip and save it to C:\Lord-G\ as SM3DWR.zip.")
 dl = input("Do you wish to make the script go to the page? If so enter 1. If not just press enter (I hope you have it downloaded if that's true.)")
