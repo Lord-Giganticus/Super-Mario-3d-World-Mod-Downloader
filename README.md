@@ -1,7 +1,8 @@
 # Super-Mario-3d-World-Repainted-Downloader
 A python script to download my mod, Super Mario 3d World: Repainted.
 # Info
-Due to the version zips being far too large for Github hosting, the program will make you go to the download page from Gamebanana. This is something I cannot fix.
+~~Due to the version zips being far too large for Github hosting, the program will make you go to the download page from Gamebanana. This is something I cannot fix.~~
+**Fixed** with use of `curl -L`
 # Usage
 `py -3 "SM3DWR Installer.py"`
 # Requirements
