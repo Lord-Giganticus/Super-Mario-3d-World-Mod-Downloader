@@ -3,7 +3,8 @@ import sys
 import shutil
 
 try:
-    os.system('curl --version')
+    os.system('curl --version > curl_test.txt')
+    os.remove('curl_test.txt')
 except:
     print("curl is not installed!")
     exit()
@@ -33,7 +34,7 @@ if os.path.isdir(arg3) == True:
 else:
     print("Third agument is not a valid directory. Defaulting to the scripts location.")
 # Defining the downloader:
-def downloader(dl_folder:str,link:str,save_folder:str):
+def downloader(dl_folder,link,save_folder):
     os.chdir(dl_folder)
     os.system('curl -L '+link+' > DL.zip')
     os.system('curl http://stahlworks.com/dev/unzip.exe --output unzip.exe') # Will attempt to remove usage of this so the script can be used on non Windows systems.
