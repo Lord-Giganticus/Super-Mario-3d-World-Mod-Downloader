@@ -7,8 +7,7 @@ A python script to download Super Mario 3D World mods (Most likely works with ot
 - `py -3 "SM3DWR Downloader.py"` (**LEGACY**)
 - `py -3 Downloader.py path gamebanana_link "another path"`
 # Requirements
-- `SM3DWR Downloader` requires usage of the win32api module which can be installed by running `py -3 -m pip install pywin32` or `py -3 -m pip install -r requirements.txt`.
-- **REMOVED** in `Downloader.py`
+- `SM3DWR Downloader` requires usage of the win32api module which can be installed by running `py -3 -m pip install pywin32` or `py -3 -m pip install -r requirements.txt`.(**REMOVED** in `Downloader.py`)
 # Contributing
 Refer to [CONTRIBUTING.md](https://github.com/Lord-Giganticus/Super-Mario-3d-World-Repainted-Downloader/blob/main/CONTRIBUTING.md)
 # Issues
