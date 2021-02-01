@@ -4,8 +4,8 @@ A python script to download Super Mario 3D World mods (Most likely works with ot
 ~~Due to the version zips being far too large for Github hosting, the program will make you go to the download page from Gamebanana. This is something I cannot fix.~~
 **Fixed** with use of `curl -L`
 # Usage
-`py -3 "SM3DWR Downloader.py"` (**LEGACY**)
-`py -3 Downloader.py path gamebanana_link "another path"`
+- `py -3 "SM3DWR Downloader.py"` (**LEGACY**)
+- `py -3 Downloader.py path gamebanana_link "another path"`
 # Requirements
 - `SM3DWR Downloader` requires usage of the win32api module which can be installed by running `py -3 -m pip install pywin32` or `py -3 -m pip install -r requirements.txt`.
 - **REMOVED** in `Downloader.py`
