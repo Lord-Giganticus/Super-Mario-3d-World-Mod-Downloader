@@ -1,5 +1,5 @@
-# Super-Mario-3d-World-Repainted-Downloader
-A python script to download my mod, Super Mario 3d World: Repainted.
+# Super-Mario-3d-World-Mod-Downloader
+A python script to download Super Mario 3d World mods (Most likely works with other Wii U mods).
 # Info
 ~~Due to the version zips being far too large for Github hosting, the program will make you go to the download page from Gamebanana. This is something I cannot fix.~~
 **Fixed** with use of `curl -L`
