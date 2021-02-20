@@ -49,7 +49,7 @@ namespace Super_Mario_3d_World_Mod_Downloader
             } else
             {
                 Directory.CreateDirectory("sdcaffine");
-                Directory.SetCurrentDirectory("sdcafiine")
+                Directory.SetCurrentDirectory("sdcafiine");
             }
         }
     }
