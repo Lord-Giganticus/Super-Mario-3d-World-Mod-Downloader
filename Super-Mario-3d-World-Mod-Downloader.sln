@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Super-Mario-3d-World-Mod-Downloader", "Super-Mario-3d-World-Mod-Downloader\Super-Mario-3d-World-Mod-Downloader.csproj", "{174284CF-AF9A-4E95-888B-83CA9605D136}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2405B4A1-27DC-4114-896B-7B2AAEA14D8B} = {2405B4A1-27DC-4114-896B-7B2AAEA14D8B}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DW-Keys", "..\3DW-Keys\3DW-Keys\3DW-Keys.csproj", "{5C992189-F4CA-49B2-A861-C19AEAAB3A28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM3DW-Keys", "SM3DW-Keys\SM3DW-Keys.csproj", "{2405B4A1-27DC-4114-896B-7B2AAEA14D8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +20,10 @@ Global
 		{174284CF-AF9A-4E95-888B-83CA9605D136}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{174284CF-AF9A-4E95-888B-83CA9605D136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{174284CF-AF9A-4E95-888B-83CA9605D136}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C992189-F4CA-49B2-A861-C19AEAAB3A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C992189-F4CA-49B2-A861-C19AEAAB3A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C992189-F4CA-49B2-A861-C19AEAAB3A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C992189-F4CA-49B2-A861-C19AEAAB3A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2405B4A1-27DC-4114-896B-7B2AAEA14D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2405B4A1-27DC-4114-896B-7B2AAEA14D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2405B4A1-27DC-4114-896B-7B2AAEA14D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2405B4A1-27DC-4114-896B-7B2AAEA14D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

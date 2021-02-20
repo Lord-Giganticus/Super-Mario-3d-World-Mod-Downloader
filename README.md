@@ -1,7 +1,7 @@
 # Super-Mario-3d-World-Mod-Downloader (C# Branch)
 This branch is dedicated to a C# version of the repo.
 # Info
-- Note that there is a csproj referenced in the code that unaccessable. This is intentional due to it containing the TitleIDs for SM3DW. I will potentially supply the .dll in the repo if I feel it's safe to.
+- The TitleIDs for 3DW are contained in the `SM3DW-Keys` folder. The `DLLs` folder contains the latest build of that project.
 # Requirements
 - cURL installed to PATH. **Note: If you have version 1803 or later of Windows 10, cURL is installed to PATH by default** [Refer to this tutorial if you are not on that Windows 10 version.](https://develop.zendesk.com/hc/en-us/articles/360001068567-Installing-and-using-cURL#install)
 # Contributing

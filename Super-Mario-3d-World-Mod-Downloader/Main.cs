@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
-using _3DW_Keys;
+using SM3DW_Keys;
 
 namespace Super_Mario_3d_World_Mod_Downloader
 {
