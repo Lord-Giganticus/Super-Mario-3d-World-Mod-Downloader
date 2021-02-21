@@ -30,7 +30,17 @@ jobs:
       shell: cmd
     - name : Zip Files
       run: 7z a Release.zip Super-Mario-3d-World-Mod-Downloader.exe SM3DW-Keys.dll
-    - uses: actions/upload-artifact@v2
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
       with:
         name: Release
         path: Release.zip
+    - name: Make a release     
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: true
+        title: "Latest Compile"
+        files: |
+          Release.zip
