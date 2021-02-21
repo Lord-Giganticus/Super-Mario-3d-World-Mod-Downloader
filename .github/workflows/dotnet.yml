@@ -16,7 +16,7 @@ jobs:
     - name: Setup nuget
       uses: nuget/setup-nuget@v1
       with:
-      nuget-version: latest
+      nuget-version: 'latest'
     - name: Restore dependencies
       run: nuget restore Super-Mario-3d-World-Mod-Downloader.sln
     - name: Add msbuild to PATH
