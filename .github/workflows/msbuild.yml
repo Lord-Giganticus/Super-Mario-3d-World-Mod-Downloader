@@ -1,0 +1,37 @@
+name: .NET
+
+on:
+  push:
+    branches: [ C-Sharp ]
+  pull_request:
+    branches: [ C-Sharp ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup nuget
+      uses: nuget/setup-nuget@v1
+      with:
+        nuget-version: latest
+    - name: Setup msbuild
+      uses: microsoft/setup-msbuild@v1.0.2
+      with:
+        vs-version: '16.5'
+    - name: Restore dependencies
+      run: nuget restore ${{ github.workspace}}\Super-Mario-3d-World-Mod-Downloader.sln
+    - name: Build
+      shell: cmd
+      run: call ${{ github.workspace}}\Build_Script.cmd
+    - name: Package
+    - uses: edgarrc/action-7z@v1.0.4
+      with:
+        args: 7z a Release.zip Super-Mario-3d-World-Mod-Downloader.exe SM3DW-Keys.dll
+    - name: Upload Artifact
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Release
+        path: Release.zip
