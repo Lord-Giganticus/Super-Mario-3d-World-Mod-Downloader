@@ -41,6 +41,6 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
         prerelease: true
-        title: "Latest Compile"
+        title: "Latest Compile of C-Sharp Branch"
         files: |
           Release.zip
