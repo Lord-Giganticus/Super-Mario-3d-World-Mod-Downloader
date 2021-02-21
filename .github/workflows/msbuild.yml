@@ -21,11 +21,11 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
       with:
         vs-version: '16.5'
-    - name: Restore dependencies
-      run: nuget restore ${{ github.workspace}}\Super-Mario-3d-World-Mod-Downloader.sln
-    - name: Build
+    - name: Restore dependencies and Build
       shell: cmd
-      run: call ${{ github.workspace}}\Build_Script.cmd
+      run: |
+        nuget restore ${{ github.workspace}}\Super-Mario-3d-World-Mod-Downloader.sln
+        call ${{ github.workspace}}\Build_Script.cmd
     - name: Package
     - uses: edgarrc/action-7z@v1.0.4
       with:
