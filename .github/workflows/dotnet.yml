@@ -13,22 +13,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+    - name: Setup nuget
+      uses: nuget/setup-nuget@v1
       with:
-        dotnet-version: 5.0.x
+      nuget-version: latest
     - name: Restore dependencies
-      run: dotnet restore
+      run: nuget restore Super-Mario-3d-World-Mod-Downloader.sln
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.2
+      with:
+        vs-version: '16.5'
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: msbuild SM3DW-Keys\SM3DW-Keys.csproj -p:Configuration=Release && msbuild Super-Mario-3d-World-Mod-Downloader.sln -p:Configuration=Release
     - name: Copy Files
       run: copy Super-Mario-3d-World-Mod-Downloader\bin\Release\Super-Mario-3d-World-Mod-Downloader.exe %CD% && copy Super-Mario-3d-World-Mod-Downloader\bin\Release\SM3DW-Keys.dll %CD%
     - name : Zip Files
-      uses: edgarrc/action-7z@v1.0.4
-      with:
-        args: 7z a Release.zip Super-Mario-3d-World-Mod-Downloader.exe SM3DW-Keys.dll
+      run: zip -r Release.zip Super-Mario-3d-World-Mod-Downloader.exe SM3DW-Keys.dll
     - uses: actions/upload-artifact@v2
       with:
         name: Release
