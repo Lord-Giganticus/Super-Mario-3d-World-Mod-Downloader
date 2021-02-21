@@ -22,7 +22,6 @@ jobs:
       with:
         vs-version: '16.5'
     - name: Restore dependencies and Build
-      shell: cmd
       run: |
         nuget restore ${{ github.workspace}}\Super-Mario-3d-World-Mod-Downloader.sln
         call ${{ github.workspace}}\Build_Script.cmd
