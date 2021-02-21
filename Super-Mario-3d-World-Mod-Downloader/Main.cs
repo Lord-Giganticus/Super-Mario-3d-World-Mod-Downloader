@@ -20,26 +20,9 @@ namespace Super_Mario_3d_World_Mod_Downloader
             File.Delete("output.zip");
             Console.WriteLine("Enter the region you want to install for.\n[1] USA\n[2] EUR\n[3] JPN\n");
             string choice = Console.ReadLine();
-            if (choice == "1")
-            {
-                goto USA;
-            }
-            else if (choice == "2")
-            {
-                //pass for now
-            }
-            else if (choice == "3")
-            {
-                //pass for now
-            }
-            else
-            {
-                Environment.Exit(1);
-            }
-        USA:
             Console.WriteLine("Enter the drive letter of your SD card;");
-            string drive = Console.ReadLine();
             string cwd = Directory.GetCurrentDirectory();
+            string drive = Console.ReadLine();
             Directory.SetCurrentDirectory("Copy");
             string[] dirs = Directory.GetDirectories(Directory.GetCurrentDirectory());
             foreach (string folder in dirs)
@@ -70,11 +53,17 @@ namespace Super_Mario_3d_World_Mod_Downloader
             } else if (choice == "3")
             {
                 Process.Start("CMD.exe", "robocopy \"" + content_folder + "\" \"" + drive + @"\sdcafiine\" + JPN.key + @"\ModPack1\" + "content\" && exit").WaitForExit();
+            } else
+            {
+                Environment.Exit(1);
             }
             goto complete;
         complete:
             Console.WriteLine("Complete. Exiting.");
+            Directory.SetCurrentDirectory(cwd);
+            Directory.Delete("Copy");
             Thread.Sleep(3000);
+            Environment.Exit(0);
         }
     }
 }
