@@ -28,7 +28,7 @@ jobs:
     - name: Copy Files
       run: copy Super-Mario-3d-World-Mod-Downloader\bin\Release\Super-Mario-3d-World-Mod-Downloader.exe %CD% && copy Super-Mario-3d-World-Mod-Downloader\bin\Release\SM3DW-Keys.dll %CD%
     - name : Zip Files
-      run: zip -r Release.zip Super-Mario-3d-World-Mod-Downloader.exe SM3DW-Keys.dll
+      run: 7z a Release.zip Super-Mario-3d-World-Mod-Downloader.exe SM3DW-Keys.dll
     - uses: actions/upload-artifact@v2
       with:
         name: Release
