@@ -1,5 +1,7 @@
 # Super-Mario-3d-World-Mod-Downloader (C# Branch)
 This branch is dedicated to a C# version of the repo.
+# Status
+[![.NET](https://github.com/Lord-Giganticus/Super-Mario-3d-World-Mod-Downloader/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Lord-Giganticus/Super-Mario-3d-World-Mod-Downloader/actions/workflows/dotnet.yml)
 # Info
 - The TitleIDs for 3DW are contained in the `SM3DW-Keys` folder. The `DLLs` folder contains the latest build of that project.
 - For a zip of the latest build refer [here.](https://github.com/Lord-Giganticus/Super-Mario-3d-World-Mod-Downloader/actions/workflows/dotnet.yml)
